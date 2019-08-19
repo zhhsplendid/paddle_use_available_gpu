@@ -6,8 +6,16 @@ program taking 10 GB GPU.
 
 Usage:
 
+Single GPU card
+
 ```
-sh main.sh
+CUDA_VISIBLE_DEVICES=0 sh main.sh
+```
+
+8 GPU cards
+
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 sh main.sh
 ```
 
 You should see:
