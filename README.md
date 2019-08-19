@@ -16,4 +16,4 @@ output = 1.000000
 Create data on GPU successfully
 
 Note: the script will kill process with name "take_cuda_mem" after running. So please check your
-computer doesn't have running program with same name.
+computer doesn't have running program with the same name.
