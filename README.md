@@ -13,6 +13,7 @@ sh main.sh
 You should see:
 
 output = 1.000000
+
 Create data on GPU successfully
 
 Note: the script will kill process with name "take_cuda_mem" after running. So please check your
