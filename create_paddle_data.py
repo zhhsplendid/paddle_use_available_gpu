@@ -12,7 +12,8 @@ x = fluid.layers.fill_constant(shape=[4, 2.5 * ONE_G / 4],
                                dtype='float32')
 y = fluid.layers.reduce_max(x, dim=1)
 
-compiled_prog = fluid.CompiledProgram(fluid.default_main_program()).with_data_parallel()
+compiled_prog = fluid.CompiledProgram(
+    fluid.default_main_program()).with_data_parallel()
 exe = fluid.Executor(core.CUDAPlace(0))
 output = exe.run(program=compiled_prog, fetch_list=[y])
 
